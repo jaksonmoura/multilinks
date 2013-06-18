@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Multi-Links Shortcut",
+  "name": "MultiLinks Shortcut",
   "description": "This extension speed up openning several tabs you daily use.",
   "version": "0.1",
   "options_page": "options.html",

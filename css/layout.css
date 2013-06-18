@@ -56,7 +56,7 @@ span {
 
 #wrapper {
   clear: both;
-  width: 50%;
+  width: 40%;
   margin: 40px auto;
   padding: 0; }
 
@@ -68,8 +68,8 @@ span {
   border-radius: 5px;
   margin: 20px 0 0 0;
   padding: 10px 0 10px 5px; }
-  #add_form input[type="text"], #add_form input[type="url"] {
-    width: 77%;
+  #add_form input[type="url"] {
+    width: 85%;
     font-size: 15px;
     color: #555;
     border: 1px solid #89cccb;
@@ -100,7 +100,7 @@ span {
       margin: 0 0 5px 0; }
     #add_form #list .division {
       float: left;
-      width: 49%; }
+      width: 100%; }
   #add_form #buttons {
     float: left;
     width: 98.7%;

@@ -72,7 +72,7 @@ span{
 
 #wrapper{
 	clear: both;
-	width: 50%;
+	width: 40%;
 	margin: 40px auto;
 	padding: 0;
 }
@@ -86,8 +86,8 @@ span{
 	margin: 20px 0 0 0;
 	padding: 10px 0 10px 5px;
 
-	input[type="text"], input[type="url"]{
-		width: 77%;
+	input[type="url"]{
+		width: 85%;
 		font-size: 15px;
 		color: #555;
 		border: 1px solid $main;
@@ -128,7 +128,7 @@ span{
 
 		.division{
 			float: left;
-			width: 49%;
+			width: 100%;
 		}
 
 	}
