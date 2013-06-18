@@ -1,0 +1,190 @@
+$main: #89CCCB;
+$secondary: #649493;
+$darker: #557d7c;
+body{
+	background: url('/imgs/bg.png');
+	width: 100%;
+	color: #444;
+	font:{
+		family: Arial;
+		size: 14px;
+	}
+	
+	margin: 0;
+	padding: 0;
+	a{
+		text-decoration: none;
+	}
+}
+
+header{
+	float: left;
+	width: 100%;
+	background: $main;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 3px solid $secondary;
+	box-shadow: 0 3px 2px #ccc;
+
+	h1{
+		font:{
+			size: 18px;
+			weight: normal;
+		}
+		color: $darker;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	#flash{
+		width: 50%;
+		background: #f7f7b2;
+		color: #c25d3e;
+		height: 20px;
+		margin: 0 0 0 25%;
+		border-radius: 0 0 5px 5px;
+		border: 1px solid #c25d3e;
+		border-top: none;
+		text-shadow: 0 1px 0px hsla(0, 0%, 100%, .5);
+		text-align: center;
+		padding: 5px;
+		position: absolute;
+		font-weight: bold;
+	}
+}
+
+h2{
+	text-align: center;
+	width: 100%;
+	margin: 5px;
+	color: #666;
+}
+span{
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin: 0 0 15px 0;
+}
+
+#wrapper{
+	clear: both;
+	width: 50%;
+	margin: 40px auto;
+	padding: 0;
+}
+
+#add_form{
+	float: left;
+	width: 100%;
+	background: hsla(0,0%, 100%, .8);
+	border: 5px solid #ddd;
+	border-radius: 5px;
+	margin: 20px 0 0 0;
+	padding: 10px 0 10px 5px;
+
+	input[type="text"], input[type="url"]{
+		width: 77%;
+		font-size: 15px;
+		color: #555;
+		border: 1px solid $main;
+		border-radius: 3px;
+		padding: 5px;
+		float: left;
+		margin: 0 5px 7px 0;
+	}
+
+	input:required:invalid, input:focus:invalid{
+		background-image: url(/imgs/invalid.png);
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
+	input:required:valid {
+		background-image: url(/imgs/valid.png);
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
+
+	label{
+		float: left;
+		min-width: 40px;
+		margin: 7px 10px 0 0;
+		text-align: right;
+	}
+
+	#list{
+		float: left;
+		width: 100%;
+
+		.link{
+			float: left;
+			width: 100%;
+			padding: 0;
+			margin: 0 0 5px 0;
+		}
+
+		.division{
+			float: left;
+			width: 49%;
+		}
+
+	}
+
+	#buttons{
+		float: left;
+		width: 98.7%;
+		height: 40px;
+
+		input[type="button"], input[type="submit"]{
+			border-radius: 3px;
+			border: 1px solid $main;
+			border-bottom: 5px solid $secondary;	
+			background: #89CCCB;
+			color: $darker;
+			font-size: 14px;
+			text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
+			cursor: pointer;
+			padding: 5px 20px;
+		}
+		
+		input[type="button"]:hover, input[type="submit"]:hover{
+			background: #97d9d8;
+		}
+
+		input[type="button"]:active, input[type="submit"]:active{
+			margin-top: 5px;
+			border-bottom: 3px solid $secondary;
+		}
+
+		#add_link_list{
+			padding-top: 0;
+			float: right;
+			font:{
+				size: 20px;
+				weight: bold; 
+			}
+
+		}
+
+	}
+}
+
+#by{
+	float: left;
+	margin-top: 10px; 
+	width: 100%;
+	text-align: center;
+	color: #666;
+	font:{
+		style: italic;
+		size: 12px;
+	}
+
+	a{
+		color: #666;
+		text-decoration: underline;
+	}
+}
