@@ -12,6 +12,9 @@
       "run_at": "document_end"
     }
   ],
+  "icons": { "16": "imgs/icon16.png",
+             "48": "imgs/icon48.png",  
+             "128": "imgs/icon128.png" },
   "background": {
     "scripts": ["js/background.js"]
   },
