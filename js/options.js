@@ -30,7 +30,8 @@ $(function(){
 			chrome.storage.sync.set({'links': links}, function() {
 		    // Notify that we saved.
 		    $('#flash').slideDown().delay(1000).slideUp();
-		  })
+		  });
+			return false;
 		});
 
 // Add Link to list
