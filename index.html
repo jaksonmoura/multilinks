@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multilinks Shortcut</title>
+		<link rel="stylesheet" href="layout.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<div id="title">
+					<h1>Multlinks Shortcut</h1>
+					<span>Open your daily pages at once.</span>
+				</div>
+				<div id="download">
+					<a href="#">Download</a>
+				</div>
+				<div id="about">
+					<a href="http://twitter.com">@jrochelly</a>
+				</div>
+			</div>
+			<div id="download_options">
+				<a href="https://chrome.google.com/webstore/detail/multilinks-shortcut/ddfoagnhebpbidjkganhgninciiecgon"><img src="chrome.png" alt="Chrome"></a>
+				<span>Chrome extension</span>
+			</div>
+		</div>	
+		<script src="jquery.js"></script>
+		<script src="bpopup.js"></script>
+		<script>
+			$('#download').click(function(){
+			  $('#download_options').bPopup(); // and show it
+			});
+		</script>
+	</body>
+</html>
