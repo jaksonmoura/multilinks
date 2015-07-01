@@ -1,15 +1,16 @@
-$main: #89CCCB;
+$main: #198B92;
 $secondary: #649493;
-$darker: #557d7c;
+$darker: #2B6362;
+$blue: #2F7BB6;
 body{
-	background: url('/imgs/bg.png');
+	background: $main;
 	width: 100%;
-	color: #444;
+	color: #333;
 	font:{
 		family: Arial;
 		size: 14px;
 	}
-	
+
 	margin: 0;
 	padding: 0;
 	a{
@@ -17,51 +18,37 @@ body{
 	}
 }
 
-header{
-	float: left;
-	width: 100%;
-	background: $main;
-	height: 40px;
+h1{
+	font:{
+		size: 30px;
+		weight: normal;
+	}
+	color: #333;
 	margin: 0;
 	padding: 0;
-	border-bottom: 3px solid $secondary;
-	box-shadow: 0 3px 2px #ccc;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+}
 
-	h1{
-		font:{
-			size: 18px;
-			weight: normal;
-		}
-		color: $darker;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		text-align: center;
-		line-height: 40px;
-	}
-
-	#flash{
-		width: 50%;
-		background: #f7f7b2;
-		color: #c25d3e;
-		height: 20px;
-		margin: 0 0 0 25%;
-		border-radius: 0 0 5px 5px;
-		border: 1px solid #c25d3e;
-		border-top: none;
-		text-shadow: 0 1px 0px hsla(0, 0%, 100%, .5);
-		text-align: center;
-		padding: 5px;
-		position: absolute;
-		font-weight: bold;
-	}
+#flash{
+	top: 0;
+	width: 50%;
+	background: rgba(black, .5);
+	color: #fff;
+	margin: 0 0 0 25%;
+	border-radius: 0 0 5px 5px;
+	text-align: center;
+	padding: 20px 0;
+	position: absolute;
+	font-weight: bold;
 }
 
 h2{
 	text-align: center;
 	width: 100%;
 	margin: 5px;
-	color: #666;
+	color: #333;
 }
 span{
 	float: left;
@@ -72,7 +59,7 @@ span{
 
 #wrapper{
 	clear: both;
-	width: 40%;
+	width: 700px;
 	margin: 40px auto;
 	padding: 0;
 }
@@ -80,14 +67,15 @@ span{
 #add_form{
 	float: left;
 	width: 100%;
-	background: hsla(0,0%, 100%, .8);
-	border: 5px solid #ddd;
+	background: #fff;
+	// border: 5px solid #;
 	border-radius: 5px;
-	margin: 20px 0 0 0;
-	padding: 10px 0 10px 5px;
+	margin: 40px 0 20px 0;
+	padding: 10px;
+	box-shadow: 1px 1px 10px rgba(black, .4);
 
 	input[type="url"]{
-		width: 85%;
+		width: 80%;
 		font-size: 15px;
 		color: #555;
 		border: 1px solid $main;
@@ -135,23 +123,25 @@ span{
 
 	#buttons{
 		float: left;
-		width: 98.7%;
+		margin-top: 10px;
+		width: 100%;
 		height: 40px;
 
 		input[type="button"], input[type="submit"]{
 			border-radius: 3px;
-			border: 1px solid $main;
-			border-bottom: 5px solid $secondary;	
-			background: #89CCCB;
-			color: $darker;
+			// border: 1px solid $main;
+			border: none;
+			// border-bottom: 5px solid $secondary;
+			background: $blue;
+			color: #fff;
 			font-size: 14px;
-			text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
+			// text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
 			cursor: pointer;
-			padding: 5px 20px;
+			padding: 10px 20px;
 		}
-		
+
 		input[type="button"]:hover, input[type="submit"]:hover{
-			background: #97d9d8;
+			background: rgba($blue, .9);
 		}
 
 		input[type="button"]:active, input[type="submit"]:active{
@@ -160,11 +150,11 @@ span{
 		}
 
 		#add_link_list{
-			padding-top: 0;
+			padding-top: 5px;
 			float: right;
 			font:{
 				size: 20px;
-				weight: bold; 
+				weight: bold;
 			}
 
 		}
@@ -172,19 +162,45 @@ span{
 	}
 }
 
+.remove{
+	border-radius: 3px;
+	float: left;
+	// border: 1px solid $main;
+	border: none;
+	// border-bottom: 5px solid $secondary;
+	background: #B44040;
+	color: #fff;
+	font-size: 18px;
+	// text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
+	cursor: pointer;
+	padding: 4px 20px;
+}
+
 #by{
 	float: left;
-	margin-top: 10px; 
+	margin-top: 10px;
 	width: 100%;
 	text-align: center;
-	color: #666;
+	color: rgba(black, .5);
+	// letter-spacing: 0px;
 	font:{
 		style: italic;
-		size: 12px;
+		size: 14px;
 	}
 
 	a{
-		color: #666;
+		color: rgba(black, .5);
 		text-decoration: underline;
 	}
+}
+
+#shortcut {
+  clear: both;
+  width: 40%;
+  padding: 10px 5px;
+  border-radius: 3px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  color: $blue;
+  background: #e1e1e1;
 }

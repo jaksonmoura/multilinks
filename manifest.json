@@ -2,9 +2,18 @@
   "manifest_version": 2,
 
   "name": "MultiLinks Shortcut",
-  "description": "This extension speed up openning several tabs you daily use.",
-  "version": "0.2.1",
+  "description": "This extension speed up opening several tabs you daily use.",
+  "version": "0.2.2",
   "options_page": "options.html",
+  "commands": {
+    "toggle-feature": {
+       "description": "Open links",
+       "suggested_key": {
+          "default": "Alt+Shift+M",
+          "mac": "Command+Shift+M"
+       }
+    }
+  },
   "content_scripts": [
     {
       "matches": ["http://jquery.com/*"],
@@ -13,7 +22,7 @@
     }
   ],
   "icons": { "16": "imgs/icon16.png",
-             "48": "imgs/icon48.png",  
+             "48": "imgs/icon48.png",
              "128": "imgs/icon128.png" },
   "background": {
     "scripts": ["js/background.js"]
