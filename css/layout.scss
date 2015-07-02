@@ -1,11 +1,17 @@
-$main: #198B92;
+$main: #00AE92;
 $secondary: #649493;
-$darker: #2B6362;
-$blue: #2F7BB6;
+$darker: #097967;
+
+*, *:before, *:after{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 body{
 	background: $main;
 	width: 100%;
-	color: #333;
+	color: #fff;
 	font:{
 		family: Arial;
 		size: 14px;
@@ -20,15 +26,25 @@ body{
 
 h1{
 	font:{
-		size: 30px;
+		size: 40px;
 		weight: normal;
 	}
-	color: #333;
-	margin: 0;
+	color: $darker;
+	margin: 0 0 20px 0;
 	padding: 0;
 	width: 100%;
 	text-align: center;
 	line-height: 50px;
+}
+
+header{
+	width: 100%;
+	float: left;
+	margin-top: 40px;
+
+	#logo{
+		margin-right: 10px;
+	}
 }
 
 #flash{
@@ -48,7 +64,6 @@ h2{
 	text-align: center;
 	width: 100%;
 	margin: 5px;
-	color: #333;
 }
 span{
 	float: left;
@@ -59,7 +74,7 @@ span{
 
 #wrapper{
 	clear: both;
-	width: 700px;
+	width: 500px;
 	margin: 40px auto;
 	padding: 0;
 }
@@ -67,22 +82,23 @@ span{
 #add_form{
 	float: left;
 	width: 100%;
-	background: #fff;
+	// background: #fff;
 	// border: 5px solid #;
 	border-radius: 5px;
-	margin: 40px 0 20px 0;
+	margin: 20px 0 20px 0;
 	padding: 10px;
-	box-shadow: 1px 1px 10px rgba(black, .4);
+	// box-shadow: 1px 1px 10px rgba(black, .4);
 
 	input[type="url"]{
-		width: 80%;
-		font-size: 15px;
+		width: calc(100% - 40px);
+		font-size: 16px;
 		color: #555;
 		border: 1px solid $main;
 		border-radius: 3px;
-		padding: 5px;
+		padding: 10px;
 		float: left;
 		margin: 0 5px 7px 0;
+		box-shadow: 2px 2px 0px $darker;
 	}
 
 	input:required:invalid, input:focus:invalid{
@@ -106,6 +122,7 @@ span{
 	#list{
 		float: left;
 		width: 100%;
+		-webkit-transition: all .5s ease-in-out;
 
 		.link{
 			float: left;
@@ -122,39 +139,44 @@ span{
 	}
 
 	#buttons{
-		float: left;
-		margin-top: 10px;
-		width: 100%;
+		// float: left;
+		margin: 0 auto;
+		width: 150px;
 		height: 40px;
 
 		input[type="button"], input[type="submit"]{
-			border-radius: 3px;
-			// border: 1px solid $main;
+			margin-top: 20px;
+			width: 48px;
+			height: 48px;
+			border-radius: 24px;
 			border: none;
-			// border-bottom: 5px solid $secondary;
-			background: $blue;
-			color: #fff;
 			font-size: 14px;
-			// text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
 			cursor: pointer;
 			padding: 10px 20px;
 		}
 
-		input[type="button"]:hover, input[type="submit"]:hover{
-			background: rgba($blue, .9);
+		input[type="submit"]{
+			background: $darker url('../imgs/ok.png') center center no-repeat;
+			color: #fff;
 		}
 
-		input[type="button"]:active, input[type="submit"]:active{
-			margin-top: 5px;
-			border-bottom: 3px solid $secondary;
+		input[type="button"]:hover, input[type="submit"]:hover{
+			background-color: rgba($darker, .7);
 		}
 
 		#add_link_list{
-			padding-top: 5px;
+			// padding-top: 5px;
 			float: right;
+
+			background: #f1f1f1 url('../imgs/add.png') center center no-repeat;
+			color: $darker;
 			font:{
 				size: 20px;
 				weight: bold;
+			}
+
+			&:hover{
+				background-color: rgba(white, .8);
 			}
 
 		}
@@ -163,17 +185,24 @@ span{
 }
 
 .remove{
-	border-radius: 3px;
-	float: left;
+	float: right;
 	// border: 1px solid $main;
 	border: none;
 	// border-bottom: 5px solid $secondary;
-	background: #B44040;
-	color: #fff;
+	background: #935454 url('../imgs/remove.png') center center no-repeat;
+	color: $main;
 	font-size: 18px;
+	margin: 5px 0 0 0;
 	// text-shadow: 0 1px 0px hsla(0, 0, 100%, .5);
 	cursor: pointer;
-	padding: 4px 20px;
+	// padding: 9px 20px;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+
+	&:hover{
+		background-color: #9E5D5D;
+	}
 }
 
 #by{
@@ -196,11 +225,11 @@ span{
 
 #shortcut {
   clear: both;
-  width: 40%;
+  width: 50%;
   padding: 10px 5px;
   border-radius: 3px;
-  margin: 0 auto 10px auto;
+  margin: 60px auto 0 auto;
   text-align: center;
-  color: $blue;
+  color: $darker;
   background: #e1e1e1;
 }
