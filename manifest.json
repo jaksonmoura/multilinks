@@ -3,13 +3,14 @@
 
   "name": "MultiLinks Shortcut",
   "description": "This extension speed up opening several tabs you daily use.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "options_page": "options.html",
   "commands": {
-    "toggle-feature": {
+    "open-links": {
        "description": "Open links",
        "suggested_key": {
           "default": "Alt+Shift+L",
+          "windows": "Alt+Shift+L",
           "mac": "Alt+Shift+L"
        }
     }

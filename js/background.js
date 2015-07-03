@@ -1,4 +1,4 @@
-function open_links(){
+function openLinks(){
   var links = {};
   chrome.storage.sync.get('links', function(result){
   links = result.links;
@@ -10,9 +10,9 @@ function open_links(){
 }
 
 chrome.browserAction.onClicked.addListener(function(tab) {
-  open_links();
+  openLinks();
 });
 
 chrome.commands.onCommand.addListener(function(command) {
-  open_links();
+  openLinks();
 });
