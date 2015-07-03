@@ -4,7 +4,7 @@
 
 ##Troubleshooting
 ###1. The shortcut is not working on Google Chrome
-Sometimes google chrome doesn't bind correctly the shortcut, once it just do this on the first installation. You can bind yourself a new shortcut by click in *Keyboard shortcuts* at the end of the extensions page list or going in [this url](chrome://extensions/configureCommands).
+Sometimes google chrome doesn't bind correctly the shortcut, once it just do this on the first installation. You can bind yourself a new shortcut by click in *Keyboard shortcuts* at the end of the extensions page list or going in chrome://extensions/configureCommands.
 ![Keyboard shortcuts](/imgs/misc/shortcuts.png)
 
 Get the extensions at [Chrome Web Store](https://chrome.google.com/webstore/detail/ddfoagnhebpbidjkganhgninciiecgon).
